@@ -15,7 +15,7 @@ const isString = (value: unknown): value is string =>
  * @param value String representation of a number
  * @returns Number represented by `value`
  */
-export function parseIntBaseTen(value: string): Maybe<number> {
+export function parseIntBase10(value: string): Maybe<number> {
 
     if (!isString(value)) {
         throw new Error(`Expected argument to be a string, got '${value}'`)

@@ -11,11 +11,11 @@ npm install @strong-roots-capital/parse-int-base-ten
 ## Use
 
 ```typescript
-import { parseIntBaseTen } from '@strong-roots-capital/parse-int-base-ten'
+import { parseIntBase10 } from '@strong-roots-capital/parse-int-base-ten'
 import { Maybe } from 'purify-ts/Maybe'
 
 const answer = Maybe.fromNullable(process.env['WHAT_IS_THE_NUMERIC_ANSWER'])
-    .chain(parseIntBaseTen)
+    .chain(parseIntBase10)
     .orDefault(42)
 
 console.log(answer)

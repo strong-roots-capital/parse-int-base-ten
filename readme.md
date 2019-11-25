@@ -15,11 +15,11 @@ Use
 ---
 
 ```typescript
-import { parseIntBaseTen } from '@strong-roots-capital/parse-int-base-ten'
+import { parseIntBase10 } from '@strong-roots-capital/parse-int-base-ten'
 import { Maybe } from 'purify-ts/Maybe'
 
 const answer = Maybe.fromNullable(process.env['WHAT_IS_THE_NUMERIC_ANSWER'])
-    .chain(parseIntBaseTen)
+    .chain(parseIntBase10)
     .orDefault(42)
 
 console.log(answer)
@@ -35,19 +35,19 @@ Related
 
 ### Functions
 
-* [parseIntBaseTen](#parseintbaseten)
+* [parseIntBase10](#parseintbase10)
 
 ---
 
 ## Functions
 
-<a id="parseintbaseten"></a>
+<a id="parseintbase10"></a>
 
-###  parseIntBaseTen
+###  parseIntBase10
 
-▸ **parseIntBaseTen**(value: *`string`*): `Maybe`<`number`>
+▸ **parseIntBase10**(value: *`string`*): `Maybe`<`number`>
 
-*Defined in [parse-int-base-ten.ts:18](https://github.com/strong-roots-capital/parse-int-base-ten/blob/af6e704/src/parse-int-base-ten.ts#L18)*
+*Defined in [parse-int-base-ten.ts:18](https://github.com/strong-roots-capital/parse-int-base-ten/blob/430941e/src/parse-int-base-ten.ts#L18)*
 
 Parse base-ten integer out of `value` if possible.
 
