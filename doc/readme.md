@@ -12,13 +12,16 @@ npm install @strong-roots-capital/parse-int-base-ten
 
 ```typescript
 import { parseIntBaseTen } from '@strong-roots-capital/parse-int-base-ten'
-// TODO: describe usage
+import { Maybe } from 'purify-ts/Maybe'
+
+const answer = Maybe.fromNullable(process.env['WHAT_IS_THE_NUMERIC_ANSWER'])
+    .chain(parseIntBaseTen)
+    .orDefault(42)
+
+console.log(answer)
+//=>42
 ```
 
 ## Related
 
-TODO
-
-## Acknowledgments
-
-TODO
+- [purify-ts](https://gigobyte.github.io/purify/adts/Maybe/)
