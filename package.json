@@ -1,6 +1,6 @@
 {
     "name": "@strong-roots-capital/parse-int-base-ten",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Use the Maybe monady to parse a base-10 integer",
     "main": "dist/src/parse-int-base-ten.js",
     "types": "dist/src/parse-int-base-ten.d.ts",
