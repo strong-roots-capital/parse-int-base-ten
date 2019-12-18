@@ -41,7 +41,7 @@
     },
     "homepage": "https://github.com/strong-roots-capital/parse-int-base-ten",
     "dependencies": {
-        "purify-ts": "^0.13.2"
+        "purify-ts": "^0.14.0"
     },
     "devDependencies": {
         "@types/node": "^12.12.12",
